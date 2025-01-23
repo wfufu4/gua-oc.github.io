@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王女·阿莉安娜</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 角色面板 -->
+        <div class="character-card">
+            <div class="portrait" id="main-character"></div>
+            <div class="stats">
+                <h2 id="character-name">阿莉安娜</h2>
+                <div class="attribute-bar">
+                    <span class="hp">❤️ <span id="hp-value">320</span>/320</span>
+                    <span class="mp">🔮 <span id="mp-value">150</span>/150</span>
+                </div>
+                <div class="traits" id="character-traits"></div>
+            </div>
+        </div>
+
+        <!-- 对话容器 -->
+        <div id="dialogue-container" class="hidden">
+            <div class="character-art" id="scene-art"></div>
+            <div class="dialogue-box">
+                <h3 id="speaker-name"></h3>
+                <p id="dialogue-text"></p>
+                <div id="choice-buttons"></div>
+            </div>
+        </div>
+
+        <!-- 系统菜单 -->
+        <div class="system-menu">
+            <button onclick="game.saveGame()">💾 保存</button>
+            <button onclick="game.loadGame()">🎮 读取</button>
+            <button onclick="game.toggleMusic()">🎵 音乐</button>
+        </div>
+    </div>
+
+    <script src="script/game.js"></script>
+    <script src="script/save.js"></script>
+</body>
+</html>
