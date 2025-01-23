@@ -1,0 +1,19 @@
+// prologue.json
+{
+  "id": "prologue",
+  "character": "阿莉安娜",
+  "characterImage": "assets/sprites/ariana_sad.png",
+  "text": "父王的病日渐沉重...那些贵族们已经开始蠢蠢欲动。我必须...",
+  "choices": [
+    {
+      "text": "前往大圣堂祈祷",
+      "nextScene": "chap1-church",
+      "effects": {"faith": 5}
+    },
+    {
+      "text": "召见近卫队长",
+      "nextScene": "chap1-guard",
+      "effects": {"loyalty": 3}
+    }
+  ]
+}
